@@ -51,6 +51,7 @@ The packages that makes Masonite even more awesome.
 ### Articles
 
 - [Masonite 2.0 and Django](https://medium.com/@idmann509/masonite-2-0-and-django-beb4986d967f)
+- [Masonite Knowledge Series: Understanding Auto Resolving Dependency Injection](https://dev.to/masonite/masonite-python-framework-knowledge-series-part-1---understanding-auto-resolving-dependency-injection-14ma)
 
 
 ### Videos
