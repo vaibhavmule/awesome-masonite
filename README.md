@@ -19,21 +19,13 @@
 ### Official Packages
 
 - [masonite](https://github.com/MasoniteFramework/core) - The core for the Masonite framework
-
 - [craft](https://github.com/MasoniteFramework/craft) - craft commands to start new Masonite projects
-
 - [entry](https://github.com/MasoniteFramework/entry) - Masonite API Integration (Not Completed! Do Not pip install this yet)
-
 - [billing](https://github.com/MasoniteFramework/billing) - Billing is to handle all of the trials, subscriptions and charges for your application.
-
 - [dashboard](https://github.com/MasoniteFramework/dashboard) - A Django Admin-like Dashboard For Masonite
-
 - [notifications](https://github.com/MasoniteFramework/notifications) - Notification package for Masonite
-
 - [deploy](https://github.com/MasoniteFramework/deploy)- Deployment package for Masonite
-
 - [events](https://github.com/MasoniteFramework/events) -  Events package for Masonite
-
 - [scheduler](https://github.com/MasoniteFramework/scheduler) - Schedule tasks with Masonite
 
 
