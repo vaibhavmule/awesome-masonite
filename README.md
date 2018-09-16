@@ -5,24 +5,20 @@
 
 ## Contents
 
-- [Section](#section)
-- [Another Section](#another-section)
+- [Packages](#packages)
+- [Resources](#resources)
+    - [Tutorials](#tutorials)
 
 
-## Section
+## Packages
 
-About this section. Optional. Keep this short and focus on the list.
+Work in progress
 
-- [List item](http://example.com)
-- [List item](http://example.com)
+## Resources
 
+### Tutorials
 
-## Another Section
-
-### Subsection
-
-- [List item](http://example.com)
-- [List item](http://example.com)
+- [Masonite Offical Tutorial](https://docs.masoniteproject.com/creating-your-first-blog/introduction) - Create Your First Blog
 
 
 ## Contribute
