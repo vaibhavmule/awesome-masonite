@@ -70,8 +70,8 @@
 - [masonite-snippets-vscode](https://github.com/nioperas06/masonite-snippets-vscode) - :rocket: Masonite Snippets for VS Code 
 
 ## Projects
-- [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site built using Masonite Framework.
 - [gbaleague-masonite2](https://github.com/josephmancuso/gbaleague-masonite2) - Global Battle Association League
+- [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site built using Masonite Framework.
 - [masonite-twitter-social-login](https://github.com/vaibhavmule/masonite-twitter-social-login) - Implement Twitter Social Login in Masonite
 
 
