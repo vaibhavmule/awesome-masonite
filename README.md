@@ -62,6 +62,7 @@ The packages that makes Masonite even more awesome.
 
 ### Community
 - [Slack](http://slack.masoniteproject.com/)
+- [`MasoniteFramework` on GitHub](https://github.com/MasoniteFramework/masonite?utm_source=rss&utm_medium=rss) 
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/masonite)
 - [`@masoniteproject` on Twitter](https://twitter.com/masoniteproject)
 - [Dev.to](https://dev.to/masonite)
