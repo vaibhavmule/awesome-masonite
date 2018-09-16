@@ -47,7 +47,7 @@
 - [Introduction Masonite 2.0 with Joseph Mancuso](https://www.youtube.com/playlist?list=PLdR9bD5hyZiiPv3pmtkSbFOFTE2HIVmhl)
 
 ### Podcasts
-- [Podcast.__init__: The Masonite Web Framework With Joe Mancuso](https://www.podcastinit.com/masonite-with-joe-mancuso-episode-174/)
+- [Podcast.\__init__: The Masonite Web Framework With Joe Mancuso](https://www.podcastinit.com/masonite-with-joe-mancuso-episode-174/)
 
 ### Community
 - [Slack](http://slack.masoniteproject.com/)
