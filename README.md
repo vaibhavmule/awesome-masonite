@@ -8,6 +8,7 @@
 - [Packages](#packages)
 - [Resources](#resources)
     - [Tutorials](#tutorials)
+    - [Videos](#videos)
 
 
 ## Packages
@@ -20,6 +21,10 @@ Work in progress
 
 - [Masonite Offical Tutorial](https://docs.masoniteproject.com/creating-your-first-blog/introduction) - Create Your First Blog
 
+### Videos
+
+- [Introduction Masonite 2.0 with Joseph Mancuso
+](https://www.youtube.com/playlist?list=PLdR9bD5hyZiiPv3pmtkSbFOFTE2HIVmhl)
 
 ## Contribute
 
