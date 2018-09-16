@@ -45,6 +45,8 @@
 
 - [Introduction Masonite 2.0 with Joseph Mancuso](https://www.youtube.com/playlist?list=PLdR9bD5hyZiiPv3pmtkSbFOFTE2HIVmhl)
 
+### Podcasts
+
 
 ### Community
 - [Slack](http://slack.masoniteproject.com/)
