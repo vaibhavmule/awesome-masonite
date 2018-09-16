@@ -8,6 +8,7 @@
 - [Packages](#packages)
     - [Official Packages](#official-packages)
 - [Resources](#resources)
+    - [Documentation](#documentation)
     - [Tutorials](#tutorials)
     - [Articles](#articles)
     - [Videos](#videos)
@@ -32,6 +33,11 @@
 
 
 ## Resources
+
+### Documentation
+- [Official docs](https://docs.masoniteproject.com/)
+- [Masonite API reference docs](https://reference.masoniteproject.com/)
+- [Orator ORM docs](https://orator-orm.com/docs/)
 
 ### Tutorials
 
