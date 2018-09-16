@@ -10,6 +10,7 @@
     - [Tutorials](#tutorials)
     - [Articles](#articles)
     - [Videos](#videos)
+    - [Community](#community)
 
 
 ## Packages
@@ -23,12 +24,20 @@ Work in progress
 - [Masonite Offical Tutorial](https://docs.masoniteproject.com/creating-your-first-blog/introduction) - Create Your First Blog
 
 ### Articles
+
 - [Masonite 2.0 and Django](https://medium.com/@idmann509/masonite-2-0-and-django-beb4986d967f)
 
 
 ### Videos
 
 - [Introduction Masonite 2.0 with Joseph Mancuso](https://www.youtube.com/playlist?list=PLdR9bD5hyZiiPv3pmtkSbFOFTE2HIVmhl)
+
+
+### Community
+- [Slack](http://slack.masoniteproject.com/)
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/masonite)
+- [Twitter](https://twitter.com/masoniteproject)
+- [Dev.to](https://dev.to/masonite)
 
 ## Contribute
 
