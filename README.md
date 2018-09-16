@@ -67,6 +67,7 @@ The packages that makes Masonite even more awesome.
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/masonite)
 - [`@masoniteproject` on Twitter](https://twitter.com/masoniteproject)
 - [Dev.to](https://dev.to/masonite)
+- [Hashnode](https://hashnode.com/n/masonite)
 
 ### Miscellaneous
 - [masonite-snippets-vscode](https://github.com/nioperas06/masonite-snippets-vscode) - :rocket: Masonite Snippets for VS Code 
