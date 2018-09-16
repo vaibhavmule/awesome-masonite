@@ -20,7 +20,7 @@
 
 
 ## Packages
-
+The packages that makes Masonite even more awesome.
 ### Official Packages
 
 - [masonite](https://github.com/MasoniteFramework/core) - The core for the Masonite framework
