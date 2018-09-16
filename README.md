@@ -14,6 +14,7 @@
     - [Videos](#videos)
     - [Podcasts](#podcasts)
     - [Community](#community)
+    - [Miscellaneous](#miscellaneous)
 - [Projects](#projects)
 - [Contribute](#contribute)
 
@@ -64,6 +65,9 @@
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/masonite)
 - [`@masoniteproject` on Twitter](https://twitter.com/masoniteproject)
 - [Dev.to](https://dev.to/masonite)
+
+### Miscellaneous
+- [masonite-snippets-vscode](https://github.com/nioperas06/masonite-snippets-vscode) - :rocket: Masonite Snippets for VS Code 
 
 ## Projects
 - [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site built using Masonite Framework.
