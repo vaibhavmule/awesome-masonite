@@ -31,6 +31,7 @@
 - [deploy](https://github.com/MasoniteFramework/deploy)- Deployment package for Masonite
 - [events](https://github.com/MasoniteFramework/events) -  Events package for Masonite
 - [scheduler](https://github.com/MasoniteFramework/scheduler) - Schedule tasks with Masonite
+- [triggers](https://github.com/MasoniteFramework/triggers) - Triggers package for masonite
 
 
 
