@@ -14,6 +14,7 @@
     - [Videos](#videos)
     - [Podcasts](#podcasts)
     - [Community](#community)
+- [Projects](#projects)
 - [Contribute](#contribute)
 
 
@@ -61,6 +62,12 @@
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/masonite)
 - [`@masoniteproject` on Twitter](https://twitter.com/masoniteproject)
 - [Dev.to](https://dev.to/masonite)
+
+## Projects
+- [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site built using Masonite Framework.
+- [gbaleague-masonite2](https://github.com/josephmancuso/gbaleague-masonite2) - Global Battle Association League
+- [masonite-twitter-social-login](https://github.com/vaibhavmule/masonite-twitter-social-login) - Implement Twitter Social Login in Masonite
+
 
 ## Contribute
 
