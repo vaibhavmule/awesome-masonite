@@ -39,6 +39,7 @@
 
 ### Documentation
 - [Official docs](https://docs.masoniteproject.com/)
+- [Roadmap](https://github.com/MasoniteFramework/roadmap) - The purposes of the roadmap is to let everyone understand the direction the framework is heading in both the short term and long term.
 - [Masonite API reference docs](https://reference.masoniteproject.com/)
 - [Orator ORM docs](https://orator-orm.com/docs/)
 
