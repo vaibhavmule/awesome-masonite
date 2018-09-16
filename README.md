@@ -23,16 +23,15 @@
 The packages that makes Masonite even more awesome.
 ### Official Packages
 
-- [masonite](https://github.com/MasoniteFramework/core) - The core for the Masonite framework
-- [craft](https://github.com/MasoniteFramework/craft) - craft commands to start new Masonite projects
-- [entry](https://github.com/MasoniteFramework/entry) - Masonite API Integration (Not Completed! Do Not pip install this yet)
+- [masonite](https://github.com/MasoniteFramework/core) - The core repo for the framework.
+- [craft](https://github.com/MasoniteFramework/craft) - Craft commands to start new project.
 - [billing](https://github.com/MasoniteFramework/billing) - Billing is to handle all of the trials, subscriptions and charges for your application.
-- [dashboard](https://github.com/MasoniteFramework/dashboard) - A Django Admin-like Dashboard For Masonite
-- [notifications](https://github.com/MasoniteFramework/notifications) - Notification package for Masonite
-- [deploy](https://github.com/MasoniteFramework/deploy)- Deployment package for Masonite
-- [events](https://github.com/MasoniteFramework/events) -  Events package for Masonite
-- [scheduler](https://github.com/MasoniteFramework/scheduler) - Schedule tasks with Masonite
-- [triggers](https://github.com/MasoniteFramework/triggers) - Triggers package for masonite
+- [dashboard](https://github.com/MasoniteFramework/dashboard) - Django Admin-like Dashboard.
+- [notifications](https://github.com/MasoniteFramework/notifications) - Notification package.
+- [deploy](https://github.com/MasoniteFramework/deploy)- Deployment package.
+- [events](https://github.com/MasoniteFramework/events) -  Events package.
+- [scheduler](https://github.com/MasoniteFramework/scheduler) - Schedule tasks.
+- [triggers](https://github.com/MasoniteFramework/triggers) - Triggers package.
 
 
 
@@ -46,7 +45,7 @@ The packages that makes Masonite even more awesome.
 
 ### Tutorials
 
-- [Masonite Offical Tutorial](https://docs.masoniteproject.com/creating-your-first-blog/introduction) - Create Your First Blog
+- [Masonite Offical Tutorial](https://docs.masoniteproject.com/creating-your-first-blog/introduction) - Create Your First Blog.
 
 ### Articles
 
@@ -70,12 +69,12 @@ The packages that makes Masonite even more awesome.
 - [Hashnode](https://hashnode.com/n/masonite)
 
 ### Miscellaneous
-- [masonite-snippets-vscode](https://github.com/nioperas06/masonite-snippets-vscode) - :rocket: Masonite Snippets for VS Code 
+- [masonite-snippets-vscode](https://github.com/nioperas06/masonite-snippets-vscode) - :rocket: Snippets for VS Code
 
 ## Projects
 - [gbaleague-masonite2](https://github.com/josephmancuso/gbaleague-masonite2) - Global Battle Association League
-- [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site built using Masonite Framework.
-- [masonite-twitter-social-login](https://github.com/vaibhavmule/masonite-twitter-social-login) - Implement Twitter Social Login in Masonite
+- [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site.
+- [masonite-twitter-social-login](https://github.com/vaibhavmule/masonite-twitter-social-login) - Twitter Social Login.
 
 
 ## Contribute
