@@ -52,7 +52,7 @@
 ### Community
 - [Slack](http://slack.masoniteproject.com/)
 - [Stack Overflow](https://stackoverflow.com/questions/tagged/masonite)
-- [Twitter](https://twitter.com/masoniteproject)
+- [`@masoniteproject` on Twitter](https://twitter.com/masoniteproject)
 - [Dev.to](https://dev.to/masonite)
 
 ## Contribute
