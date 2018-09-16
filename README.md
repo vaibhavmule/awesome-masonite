@@ -14,6 +14,7 @@
     - [Videos](#videos)
     - [Podcasts](#podcasts)
     - [Community](#community)
+- [Contribute](#contribute)
 
 
 ## Packages
