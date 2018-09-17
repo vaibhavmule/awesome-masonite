@@ -31,8 +31,6 @@ The packages that makes Masonite even more awesome.
 - [deploy](https://github.com/MasoniteFramework/deploy)- Deployment package.
 - [events](https://github.com/MasoniteFramework/events) -  Events package.
 - [scheduler](https://github.com/MasoniteFramework/scheduler) - Schedule tasks.
-- [triggers](https://github.com/MasoniteFramework/triggers) - Triggers package.
-
 
 
 ## Resources
