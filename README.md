@@ -25,14 +25,13 @@ The packages that makes Masonite even more awesome.
 
 - [masonite](https://github.com/MasoniteFramework/core) - The core repo for the framework.
 - [craft](https://github.com/MasoniteFramework/craft) - Craft commands to start new project.
+- [entry](https://github.com/MasoniteFramework/entry) - Entry is a remarkably simple but remarkably powerful API integration for the Masonite. 
 - [billing](https://github.com/MasoniteFramework/billing) - Billing is to handle all of the trials, subscriptions and charges for your application.
 - [dashboard](https://github.com/MasoniteFramework/dashboard) - Django Admin-like Dashboard.
 - [notifications](https://github.com/MasoniteFramework/notifications) - Notification package.
 - [deploy](https://github.com/MasoniteFramework/deploy)- Deployment package.
 - [events](https://github.com/MasoniteFramework/events) -  Events package.
 - [scheduler](https://github.com/MasoniteFramework/scheduler) - Schedule tasks.
-- [triggers](https://github.com/MasoniteFramework/triggers) - Triggers package.
-
 
 
 ## Resources
