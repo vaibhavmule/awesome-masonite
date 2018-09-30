@@ -70,7 +70,7 @@ The packages that makes Masonite even more awesome.
 ### Miscellaneous
 - [masonite-snippets-vscode](https://github.com/nioperas06/masonite-snippets-vscode) - :rocket: Snippets for VS Code
 
-## Projects
+## Projects Made with Masonite
 - [gbaleague-masonite2](https://github.com/josephmancuso/gbaleague-masonite2) - Global Battle Association League
 - [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site.
 - [masonite-twitter-social-login](https://github.com/vaibhavmule/masonite-twitter-social-login) - Twitter Social Login.
