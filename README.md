@@ -18,7 +18,6 @@
 - [Projects](#projects)
 - [Contribute](#contribute)
 
-
 ## Packages
 The packages that makes Masonite even more awesome.
 ### Official Packages
@@ -32,7 +31,6 @@ The packages that makes Masonite even more awesome.
 - [deploy](https://github.com/MasoniteFramework/deploy)- Deployment package.
 - [events](https://github.com/MasoniteFramework/events) -  Events package.
 - [scheduler](https://github.com/MasoniteFramework/scheduler) - Schedule tasks.
-
 
 ## Resources
 
@@ -50,7 +48,6 @@ The packages that makes Masonite even more awesome.
 
 - [Masonite 2.0 and Django](https://medium.com/@idmann509/masonite-2-0-and-django-beb4986d967f)
 - [Masonite Knowledge Series: Understanding Auto Resolving Dependency Injection](https://dev.to/masonite/masonite-python-framework-knowledge-series-part-1---understanding-auto-resolving-dependency-injection-14ma)
-
 
 ### Videos
 
@@ -74,12 +71,11 @@ The packages that makes Masonite even more awesome.
 - [gbaleague-masonite2](https://github.com/josephmancuso/gbaleague-masonite2) - Global Battle Association League
 - [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site.
 - [masonite-twitter-social-login](https://github.com/vaibhavmule/masonite-twitter-social-login) - Twitter Social Login.
-
+- [madewithmasonite](https://github.com/mitchdennett/madewithmasonite) - The showcase of sites made with Masonite
 
 ## Contribute
 
 Contributions welcome! Read the [contribution guidelines](CONTRIBUTING.md) first.
-
 
 ## License
 
