@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Awesome Masonite · Finder</title>
+    
+    <meta name="description" content="Find your favourite Masonite Repos">
+
+    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link type="text/plain" rel="author" href="humans.txt">
+    
+    <style>
+        .margin-bottom-50px {
+            margin-bottom: 50px;
+        }
+        .width-35-percent {
+            width:35%;
+            height:auto;
+        }
+    </style>
+</head>
+
+<body class="content">
+
+    <div class="margin-bottom-50px"></div>
+
+    <header>
+        <section class="columns is-centered" id="logo">
+            <div class="column is-half has-text-centered">
+                <a href="https://masoniteproject.com"><img class="width-35-percent" src="https://camo.githubusercontent.com/2030bee2e67bc3b6d425bd09205fd2f9fdd0a342/68747470733a2f2f692e696d6775722e636f6d2f724558636f4d6e2e706e67"></a>
+                <p>Awesome <i>Masonite</i> Finder helps you discover new <i>Masonite</i> related projects.</p>
+            </div>
+        </section>
+    </header>
+
+    <div class="margin-bottom-50px"></div>
+
+    <main>
+       
+        <section id="search" style="display:none">
+            <form class="form">
+                <div class="columns is-centered" id="search">
+                    <div class="column is-half has-text-centered">
+                        <input  id="searchbar" class="input is-rounded" autofocus="true" placeholder="What you are looking for?" type="text" value="">
+                    </div>
+                </div>
+                <div class="columns is-centered" id="searchbar">
+                    <div class="column is-half has-text-centered">
+                        <button class="button is-info is-large" id="searchbutton">Filter</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <div class="margin-bottom-50px"></div>
+
+        <section class="columns is-centered" id="searching">
+                <div class="column is-half has-text-centered">    
+                    <p>Fetching Repos</p>
+                </div>
+        </section>
+
+        <section id="results" style="display:none">
+            <table class="table is-striped is-hoverable" id="table-projects">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>License</th>
+                    <th>Stars</th>
+                    <th>Url</th>
+                    <th>Updated At</th>
+                  </tr>
+                </thead>
+                <tfoot>
+                        <tr>
+                          <th>Total Repositories Found</th>
+                          <th id="total_count"></th>
+                        </tr>
+                      </tfoot>
+                <tbody id="table-projects-body">
+                  <!-- Repos here -->
+                </tbody>
+              </table>
+        </section>
+
+        
+        
+        <div class="margin-bottom-50px"></div>
+    </main>
+
+    <footer>
+        <section class="columns is-centered" id="bottom">
+            <div class="column is-half has-text-centered">
+                <a href="https://github.com/vaibhavmule/awesome-masonite">Awesome Masonite</a>
+            </div>
+        </section>
+        <div class="margin-bottom-50px"></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/moment/min/moment.min.js"></script>
+
+    <!-- Fetch Repos -->
+    <script type="text/javascript">
+        
+        let results = {
+            total: 0,
+            items: []
+        }
+
+        $(document).ready(() => {
+            let endpoint = `https://api.github.com/search/repositories?q=masonite&topic=masonite&sort=stars&order=desc`
+            
+            console.log('Fetching', endpoint)
+            
+            $.ajax({
+                url:endpoint,
+                type: 'GET',
+                headers: {'Accept' : 'application/vnd.github.mercy-preview+json'},
+                success: (data) => {
+                    
+                    results.total = data.total_count
+                    results.items = data.items
+
+                    $('#total_count').html(data.total_count)
+                    $('#search').prop('style', '')
+                    $('#results').prop('style', '')
+                    $('#searching').prop('style', 'display:none')
+
+                    data.items.forEach(element => {
+
+                        let license = 'Unknown'
+                        if(element && element.license && element.license.name)
+                        {
+                            license = element.license.name
+                        }
+
+                        let updated = moment(element.updated_at || new Date()).format('YYYY-MM-DD')
+
+                        $('#table-projects-body').append(`
+                        <tr class="repo">
+                            <td class="data" style="text-transform: capitalize;"><a href="${element.html_url}">${element.name}</a></td>
+                            <td class="data"> ${element.description || ""} </td>
+                            <td class="data"> ${license} </td>
+                            <td class="data"> ${element.stargazers_count || 0} </td>
+                            <td class="data"><a href="${element.html_url || "#"}">Github</a></td>
+                            <td class="data">${updated}</td>
+                        </tr>
+                        `)  
+                    })
+                },
+                error: (error) => {
+                    console.error(error)
+                    alert('Could not fetch repos :C')
+                }
+            })
+        })
+    </script>
+
+    <!-- Filter Table -->
+    <script type="text/javascript">
+
+        function reset() {
+
+            // Found here https://www.w3schools.com/howto/howto_js_filter_table.asp
+            let tr = document.getElementsByClassName("repo")
+
+            for (i = 0; i < tr.length; i++) {
+                td = tr[i].getElementsByTagName("td")[0]
+                if (td) {
+                        tr[i].style.display = ""
+                }
+            }
+            
+            let total = 0
+            if(results && results.total)
+            {
+                total = results.total
+            }
+
+            $('#total_count').html(total)
+        }
+
+        function filter() {
+
+                let query = document.getElementById("searchbar").value
+
+                if(!query || query === "")
+                {
+                    return reset()
+                }
+                
+                let tr = document.getElementsByClassName("repo")
+                let td = null
+                let counter = 0
+
+                // Loop through all table rows, and hide those who don't match the search query
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0]
+                    if (td) {
+                        tr[i].style.display = "none"
+                        if (td.innerHTML.toLowerCase().indexOf(query) > -1) {
+                            tr[i].style.display = ""
+                            counter++
+                        }
+                    }
+                }
+            
+                $('#total_count').html(counter)
+        }
+
+        $(document).ready(() => {
+            $('#searchbar').on('keyup change propertyChange', (event) => {
+                filter()
+            })
+
+            $('#searchbutton').on('click', (event) => {
+                event.preventDefault()
+                filter()
+            })
+        })
+    </script>
+</body>
+</html>
