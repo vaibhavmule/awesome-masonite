@@ -1,0 +1,18 @@
+# Humans.txt
+
+Made by Camilo Castro <camilo@ninjas.cl>
+For https://github.com/vaibhavmule/awesome-masonite
+
+2 October 2018
+
+## Tech
+
+JS
+CSS
+HTML5
+jQuery
+Moment
+Bulma
+
+## License
+MIT

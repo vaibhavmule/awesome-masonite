@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "bulma": "^0.7.1",
+    "zepto": "^1.2.0"
+  }
+}

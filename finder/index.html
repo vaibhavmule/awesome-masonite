@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Awesome Masonite · Finder</title>
+    
+    <meta name="description" content="Find your favourite Masonite Repos">
+    <meta name="robots" content="index,nofollow">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link type="text/plain" rel="author" href="humans.txt">
+</head>
+
+<body class="content">
+
+    <div class="margin-bottom-50px"></div>
+
+    <header>
+        <section class="columns is-centered" id="logo">
+            <div class="column is-half has-text-centered">
+                <a href="https://docs.masoniteproject.com/"><img class="width-35-percent" title="https://docs.masoniteproject.com/" src="https://camo.githubusercontent.com/2030bee2e67bc3b6d425bd09205fd2f9fdd0a342/68747470733a2f2f692e696d6775722e636f6d2f724558636f4d6e2e706e67"></a>
+                <p>Awesome <i>Masonite</i> Finder helps you discover new <i>Masonite</i> related projects.</p>
+            </div>
+        </section>
+    </header>
+
+    <div class="margin-bottom-50px"></div>
+
+    <main>
+        <section id="finder-section" style="display:none">
+            <form class="form">
+                <div class="columns is-centered" id="finder-div">
+                    <div class="column is-half has-text-centered">
+                        <input  id="finder-bar" class="input is-rounded" autofocus="true" placeholder="Filter available repos" type="text" value="">
+                    </div>
+                </div>
+            </form>
+        </section>
+
+        <div class="margin-bottom-50px"></div>
+
+        <section class="columns is-centered" id="fetching">
+                <div class="column is-half has-text-centered">    
+                    <p>Fetching Repos</p>
+                </div>
+        </section>
+
+        <section id="results" style="display:none">
+            <table class="table is-striped is-hoverable" id="table-projects">
+                <thead>
+                    <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>License</th>
+                    <th>Stars</th>
+                    <th>URL</th>
+                    <th>Updated At (ISO-8601)</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                        <tr>
+                            <th>Total Repositories Found</th>
+                            <th id="total-count"></th>
+                        </tr>
+                        </tfoot>
+                <tbody id="table-projects-body">
+                    <!-- Repos here -->
+                </tbody>
+            </table>
+        </section>
+        
+        <div class="margin-bottom-50px"></div>
+    </main>
+
+    <footer>
+        <section class="columns is-centered" id="bottom">
+            <div class="column is-half has-text-centered">
+                <a href="https://github.com/vaibhavmule/awesome-masonite">Awesome Masonite</a>
+            </div>
+        </section>
+        <div class="margin-bottom-50px"></div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
