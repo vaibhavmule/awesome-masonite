@@ -10,8 +10,6 @@ For https://github.com/vaibhavmule/awesome-masonite
 JS
 CSS
 HTML5
-jQuery
-Moment
 Bulma
 
 ## License
