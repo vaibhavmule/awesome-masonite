@@ -23,7 +23,7 @@ function reset() {
         total = results.total
     }
 
-    $('#total-count').html(total)
+    document.getElementById("total-count").innerHTML = total
 }
 
 function filter() {
@@ -51,28 +51,31 @@ function filter() {
             }
         }
     
-        $('#total-count').html(counter)
+        document.getElementById("total-count").innerHTML = counter
 }
 
-function fetch()
+function fetch_repos()
 {
     let endpoint = `https://api.github.com/search/repositories?q=masonite&topic=masonite&sort=stars&order=desc`
             
     console.log('Fetching', endpoint)
     
-    $.ajax({
-        url:endpoint,
-        type: 'GET',
-        headers: {'Accept' : 'application/vnd.github.mercy-preview+json'},
-        success: (data) => {
+    fetch(endpoint).then((response) => {
+
+        if (response.status !== 200) {
+            console.log("Looks like there was a problem.", response)
+            return Promise.reject("Could not fetch repos :C")
+        }
+
+        response.json().then(function(data) {
             
             results.total = data.total_count
             results.items = data.items
 
-            $('#total-count').html(data.total_count)
-            $('#finder-section').prop('style', '')
-            $('#results').prop('style', '')
-            $('#fetching').prop('style', 'display:none')
+            document.getElementById("total-count").innerHTML = data.total_count
+            document.getElementById("finder-section").style.display = ''
+            document.getElementById("results").style.display = ''
+            document.getElementById("fetching").style.display = 'none'
 
             data.items.forEach(element => {
 
@@ -96,7 +99,7 @@ function fetch()
                     url = element.homepage
                 }
 
-                $('#table-projects-body').append(`
+                document.getElementById("table-projects-body").innerHTML += `
                 <tr class="repo">
                     <td class="data" style="text-transform: capitalize;"><a href="${url}">${element.name}</a></td>
                     <td class="data"> ${element.description || ""} </td>
@@ -105,21 +108,21 @@ function fetch()
                     <td class="data"><a href="${element.html_url || "#"}">Github</a></td>
                     <td class="data">${updated}</td>
                 </tr>
-                `)  
+                `
             })
-        },
-        error: (error) => {
-            console.error(error)
-            alert('Could not fetch repos :C')
-        }
+
+        }).catch(error => {
+            console.log(error)
+            alert(error)
+        })
     })
 }
 
 $(document).ready(() => {
     
-    fetch()
+    fetch_repos()
 
-    $('#finder-bar').on('keyup change', () => {
+    $('#finder-bar').on('input keyup change', () => {
         filter()
     })
 })
