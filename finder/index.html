@@ -5,7 +5,7 @@
     
     <meta name="description" content="Find your favourite Masonite Repos">
 
-    <link rel="stylesheet" href="node_modules/bulma/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link type="text/plain" rel="author" href="humans.txt">
     
     <style>
@@ -35,10 +35,9 @@
     <div class="margin-bottom-50px"></div>
 
     <main>
-       
         <section id="search" style="display:none">
             <form class="form">
-                <div class="columns is-centered" id="search">
+                <div class="columns is-centered" id="search-div">
                     <div class="column is-half has-text-centered">
                         <input  id="searchbar" class="input is-rounded" autofocus="true" placeholder="What you are looking for?" type="text" value="">
                     </div>
@@ -62,25 +61,25 @@
         <section id="results" style="display:none">
             <table class="table is-striped is-hoverable" id="table-projects">
                 <thead>
-                  <tr>
+                    <tr>
                     <th>Name</th>
                     <th>Description</th>
                     <th>License</th>
                     <th>Stars</th>
                     <th>Url</th>
                     <th>Updated At</th>
-                  </tr>
+                    </tr>
                 </thead>
                 <tfoot>
                         <tr>
-                          <th>Total Repositories Found</th>
-                          <th id="total_count"></th>
+                            <th>Total Repositories Found</th>
+                            <th id="total_count"></th>
                         </tr>
-                      </tfoot>
+                        </tfoot>
                 <tbody id="table-projects-body">
-                  <!-- Repos here -->
+                    <!-- Repos here -->
                 </tbody>
-              </table>
+            </table>
         </section>
 
         
@@ -98,8 +97,8 @@
     </footer>
 
     <!-- Scripts -->
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/moment/min/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 
     <!-- Fetch Repos -->
     <script type="text/javascript">
