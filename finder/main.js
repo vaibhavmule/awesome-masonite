@@ -9,11 +9,12 @@ function reset() {
 
     // Found here https://www.w3schools.com/howto/howto_js_filter_table.asp
     let tr = document.getElementsByClassName("repo")
+    let td = null
 
     for (i = 0; i < tr.length; i++) {
         td = tr[i].getElementsByTagName("td")[0]
         if (td) {
-                tr[i].style.display = ""
+            tr[i].style.display = ""
         }
     }
     
@@ -37,14 +38,27 @@ function filter() {
         
         let tr = document.getElementsByClassName("repo")
         let td = null
+        let name = null
+        let description = null
+        let topics = null
         let counter = 0
+        let notfound = -1
 
         // Loop through all table rows, and hide those who don't match the search query
         for (i = 0; i < tr.length; i++) {
-            td = tr[i].getElementsByTagName("td")[0]
+            
+            td = tr[i].getElementsByTagName("td")
+            name = td[0].innerHTML.toLowerCase()
+            description = td[1].innerHTML.toLowerCase()
+            topics = td[2].innerHTML.toLocaleLowerCase()
+
             if (td) {
                 tr[i].style.display = "none"
-                if (td.innerHTML.toLowerCase().indexOf(query) > -1) {
+
+                if (name.indexOf(query) != notfound ||
+                    description.indexOf(query) != notfound ||
+                    topics.indexOf(query) != notfound) {
+
                     tr[i].style.display = ""
                     counter++
                 }
@@ -57,10 +71,11 @@ function filter() {
 function fetch_repos()
 {
     let endpoint = `https://api.github.com/search/repositories?q=masonite&topic=masonite&sort=stars&order=desc`
-            
-    console.log('Fetching', endpoint)
     
-    fetch(endpoint).then((response) => {
+    fetch(endpoint, {
+        method:"GET", 
+        headers:{"Accept": "application/vnd.github.mercy-preview+json"}
+    }).then((response) => {
 
         if (response.status !== 200) {
             console.log("Looks like there was a problem.", response)
@@ -73,19 +88,19 @@ function fetch_repos()
             results.items = data.items
 
             document.getElementById("total-count").innerHTML = data.total_count
-            document.getElementById("finder-section").style.display = ''
-            document.getElementById("results").style.display = ''
-            document.getElementById("fetching").style.display = 'none'
+            document.getElementById("finder-section").style.display = ""
+            document.getElementById("results").style.display = ""
+            document.getElementById("fetching").style.display = "none"
 
             data.items.forEach(element => {
 
-                let license = 'Unknown'
+                let license = "Unknown"
                 if(element && element.license && element.license.name)
                 {
                     license = element.license.name
                 }
                 
-                let updated = 'Unknown'
+                let updated = "Unknown"
                 if(element.updated_at)
                 {
                     // https://stackoverflow.com/questions/23593052/format-javascript-date-to-yyyy-mm-dd#comment58447831_29774197
@@ -99,14 +114,21 @@ function fetch_repos()
                     url = element.homepage
                 }
 
+                let topics = ""
+                if(element.topics && element.topics.length > 0)
+                {
+                    topics = element.topics.join()
+                }
+
                 document.getElementById("table-projects-body").innerHTML += `
                 <tr class="repo">
-                    <td class="data" style="text-transform: capitalize;"><a href="${url}">${element.name}</a></td>
-                    <td class="data"> ${element.description || ""} </td>
-                    <td class="data"> ${license} </td>
-                    <td class="data"> ${element.stargazers_count || 0} </td>
-                    <td class="data"><a href="${element.html_url || "#"}">Github</a></td>
-                    <td class="data">${updated}</td>
+                    <td class="data name" style="text-transform: capitalize;"><a href="${url}">${element.name}</a></td>
+                    <td class="data description"> ${element.description || ""} </td>
+                    <td class="data topics" style="display:none">${topics}</td>
+                    <td class="data license"> ${license} </td>
+                    <td class="data stars"> ${element.stargazers_count || 0} </td>
+                    <td class="data github"><a href="${element.html_url || "#"}">Github</a></td>
+                    <td class="data updated">${updated}</td>
                 </tr>
                 `
             })
@@ -122,7 +144,7 @@ $(document).ready(() => {
     
     fetch_repos()
 
-    $('#finder-bar').on('input keyup change', () => {
+    $("#finder-bar").on("input keyup change", () => {
         filter()
     })
 })
