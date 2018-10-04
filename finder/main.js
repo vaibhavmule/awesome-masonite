@@ -50,7 +50,7 @@ function filter() {
             td = tr[i].getElementsByTagName("td")
             name = td[0].innerHTML.toLowerCase()
             description = td[1].innerHTML.toLowerCase()
-            topics = td[2].innerHTML.toLocaleLowerCase()
+            topics = td[2].innerHTML.toLowerCase()
 
             if (td) {
                 tr[i].style.display = "none"
@@ -92,29 +92,34 @@ function fetch_repos()
             document.getElementById("results").style.display = ""
             document.getElementById("fetching").style.display = "none"
 
+            let license = null
+            let updated = null
+            let url = null
+            let topics = null
+
             data.items.forEach(element => {
 
-                let license = "Unknown"
+                license = "Unknown"
                 if(element && element.license && element.license.name)
                 {
                     license = element.license.name
                 }
                 
-                let updated = "Unknown"
+                updated = "Unknown"
                 if(element.updated_at)
                 {
                     // https://stackoverflow.com/questions/23593052/format-javascript-date-to-yyyy-mm-dd#comment58447831_29774197
                     updated = new Date(element.updated_at).toISOString().split('T')[0]
                 }
 
-                let url = element.html_url
-
+                url = element.html_url
                 if(element.homepage)
                 {
                     url = element.homepage
                 }
 
-                let topics = ""
+                // Topics may not exist thats why they are hidden
+                topics = ""
                 if(element.topics && element.topics.length > 0)
                 {
                     topics = element.topics.join()
