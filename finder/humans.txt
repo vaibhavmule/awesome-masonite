@@ -11,6 +11,7 @@ JS
 CSS
 HTML5
 Bulma
+Zepto
 
 ## License
 MIT
