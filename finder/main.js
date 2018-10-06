@@ -145,11 +145,15 @@ function fetch_repos()
     })
 }
 
-$(document).ready(() => {
+if (document.readyState !== 'loading') {
+    fetch_repos();
     
-    fetch_repos()
+    let el = document.getElementById("finder-bar");
 
-    $("#finder-bar").on("input keyup change", () => {
-        filter()
+    el.addEventListener("input keyup change", () => {
+        filter();
     })
-})
+
+} else {
+    document.addEventListener('DOMContentLoaded', fetch_repos);
+}
