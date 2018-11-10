@@ -72,6 +72,7 @@ The packages that makes Masonite even more awesome.
 - [masonite-forum](https://github.com/nioperas06/masonite-forum]) - Vote based Question & Answer site.
 - [masonite-twitter-social-login](https://github.com/vaibhavmule/masonite-twitter-social-login) - Twitter Social Login.
 - [madewithmasonite](https://github.com/mitchdennett/madewithmasonite) - The showcase of sites made with Masonite
+- [masonite-hello-world](https://github.com/vaibhavmule/masonite-hello-world) - Hello World Web App in Masonite
 
 ## Contribute
 
