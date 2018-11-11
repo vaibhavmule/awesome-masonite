@@ -73,6 +73,9 @@ The packages that makes Masonite even more awesome.
 - [masonite-twitter-social-login](https://github.com/vaibhavmule/masonite-twitter-social-login) - Twitter Social Login.
 - [madewithmasonite](https://github.com/mitchdennett/madewithmasonite) - The showcase of sites made with Masonite
 - [masonite-hello-world](https://github.com/vaibhavmule/masonite-hello-world) - Hello World Web App in Masonite
+- [masonite-demo-blog](https://github.com/hammacktony/masonite-demo-blog) - Masonite Demo Blog
+
+
 
 ## Contribute
 
