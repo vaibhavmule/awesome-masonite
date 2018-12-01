@@ -47,6 +47,7 @@ The packages that makes Masonite even more awesome.
 ### Articles
 
 - [Masonite 2.0 and Django](https://medium.com/@idmann509/masonite-2-0-and-django-beb4986d967f)
+- [Masonite and Django Differences](https://dev.to/masonite/masonite-and-django-differences-kni)
 - [Masonite Knowledge Series: Understanding Auto Resolving Dependency Injection](https://dev.to/masonite/masonite-python-framework-knowledge-series-part-1---understanding-auto-resolving-dependency-injection-14ma)
 
 ### Videos
@@ -74,8 +75,6 @@ The packages that makes Masonite even more awesome.
 - [madewithmasonite](https://github.com/mitchdennett/madewithmasonite) - The showcase of sites made with Masonite
 - [masonite-hello-world](https://github.com/vaibhavmule/masonite-hello-world) - Hello World Web App in Masonite
 - [masonite-demo-blog](https://github.com/hammacktony/masonite-demo-blog) - Masonite Demo Blog
-
-
 
 ## Contribute
 
