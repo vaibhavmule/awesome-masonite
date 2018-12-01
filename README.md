@@ -42,7 +42,7 @@ The packages that makes Masonite even more awesome.
 
 ### Tutorials
 
-- [Masonite Offical Tutorial](https://docs.masoniteproject.com/tutorials/creating-a-blog) - Create Your First Blog.
+- [Masonite Offical Tutorial](https://docs.masoniteproject.com/v/v2.1/tutorials/creating-a-blog) - Create Your First Blog.
 
 ### Articles
 
