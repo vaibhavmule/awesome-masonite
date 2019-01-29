@@ -52,7 +52,8 @@ The packages that makes Masonite even more awesome.
 
 ### Videos
 
-- [Introduction Masonite 2.0 with Joseph Mancuso](https://www.youtube.com/playlist?list=PLdR9bD5hyZiiPv3pmtkSbFOFTE2HIVmhl)
+- [Masonite 2.1 with Joseph Mancuso](https://www.youtube.com/playlist?list=PLdR9bD5hyZiggChzg-ipmzVfI_MX6ptvC)
+- [Masonite 2.0 with Joseph Mancuso](https://www.youtube.com/playlist?list=PLdR9bD5hyZiiPv3pmtkSbFOFTE2HIVmhl)
 
 ### Podcasts
 - [Podcast.\__init__: The Masonite Web Framework With Joe Mancuso](https://www.podcastinit.com/masonite-with-joe-mancuso-episode-174/)
