@@ -43,6 +43,7 @@ The packages that makes Masonite even more awesome.
 ### Tutorials
 
 - [Masonite Offical Tutorial](https://docs.masoniteproject.com/v/v2.1/tutorials/creating-a-blog) - Create Your First Blog.
+- [Dockerizing Masonite with Postgres, Gunicorn, and Nginx](https://testdriven.io/blog/dockerizing-masonite-with-postgres-gunicorn-and-nginx/) - Details how to configure Masonite to run on Docker along with Postgres, Nginx, and Gunicorn.
 
 ### Articles
 
